@@ -25,28 +25,38 @@ session = {}
 
 def random_str():
     '''生成一个随机字符串'''
-    seed = 'sdfsdfljljsdjflsdfjlsksdfsdfjl'
+    seed = '1234567890qwertyuiopasdfghjkl'
     session_id = ''
     for i in range(16):
         random_index = random.randint(0, len(seed)-1)
         session_id += seed[random_index]
     return session_id
 
+# 1，非post返回登录页面
+# 2，post，：
+#     若检验成功
+#
+#
+#     返回登录成功页面
+
 def route_login(request):
     header = 'HTTP/1.1 210 VERY OK\r\nContent-Type: text/html\r\n{{}}\r\n'
     if request.method == 'POST':
+        # 生成对象，验证对象
         form = request.form()
         u = User.new(form)
-        if u.validate_login():
-            # 设置一个随机字符串来当令牌使用
+        if u.exist():
+            #  生成session，与用户名称建立联系
             session_id = random_str()
             session[session_id] = u.username
+            # 在要返回的headers字段里增加set-cookie字段，加入session
             set_cookie = 'Set-Cookie: user={}'.format(session_id)
             header.replace('{{}}',set_cookie)
-            username = u.username
             result = '登录成功   <a href="/todo">todo list</a>'
         else:
             result = '用户名或者密码错误'
+    else:
+        result = '请登录'
     body = template('login.html')
     body = body.replace('{{result}}', result)
     r = header + '\r\n' + body
