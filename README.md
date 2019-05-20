@@ -8,17 +8,21 @@
 一，首先复制sever4框架，然后准备添加用户功能  
 1，补充request对象，让解析是能得到请求里的headers字段，和cookie  
 2, 实现用户登录功能，
-    M:User对象的实现 
-    V:register.html login.html的实现
-    C:route_index route_register函数的实现  
-        route_register：1，如果不是post请求返回一个登录页面response
-                        2，如果是post请求，根据请求表单，生成对象，并保存
-                        返回一个登录成功的页面  
-        route_register：1，非post返回登录页面
-                        2，post，生成对象，验证对象：
-                            若检验成功
-                            生成session，与用户信息建立联系（加入字典）
-                            在要返回的headers字段里增加set-cookie字段，加入session
+   - M:User对象的实现 
+   - V:register.html login.html的实现
+   - C:route_index route_register函数的实现
+     
+        - route_register：
+            1. 如果不是post请求返回一个登录页面response
+            2. 如果是post请求，根据请求表单，生成对象，并保存
+               返回一个登录成功的页面 
+                         
+        - route_login:
+            1. 非post返回登录页面
+            2. post，生成对象，验证对象，若检验成功，  
+            生成session，与用户名称建立联系
+                返回set-cookie字段
+                返回登录成功页面
 
 
 

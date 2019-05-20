@@ -1,8 +1,5 @@
-
-.idea/inspectionProfiles/Project_Default.xml
-.idea/markdown-navigator.xml
 *.xml
 *.iml
 *.pyc
-db/User.txt
+
 db/User.txt
