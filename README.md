@@ -42,10 +42,10 @@
             1. 返回一个todo_list页面
                          
         - route_add_todo:
-            1. 根据请求表单，添加todo，并保存
+            1. 根据POST请求表单，添加todo，并保存
                返回一个重定位到/todo的response
                
         - route_delete_todo:
-            1. 根据请求表单，删除todo，并保存
+            1. 根据GET请求query，删除指定todo，并保存
                返回一个重定位到/todo的response
 

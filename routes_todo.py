@@ -38,8 +38,8 @@ def route_todo(request):
     todos = []
     i = 1
     for t in todo_list:
-        delete_button = '<botton>'
-        s = '<h3>{} : {}</h3>'.format(i, t.title)
+        delete_href = '<a href="/todo/delete?id={}">删除</a>'.format(t.id)
+        s = '<h3>{} : {}  {}</h3>'.format(i, t.title, delete_href)
         i = i + 1
         todos.append(s)
     todo_html = ''.join(todos)
@@ -61,9 +61,20 @@ def route_add_todo(request):
     return redirect('/todo')
 
 
+def route_delete_todo(request):
+    """
+    删除一个todo的处理函数
+    """
+    #得到todo对象
+    todo_id = int(request.query.get('id', None))
+    t = Todo.findby(id = todo_id)
+    #删除他
+    t.remove()
+    return redirect('/todo')
+
 
 route_todo_dict = {
     '/todo': route_todo,
-    '/todo/add': route_add_todo
-    #'/todo/delete': route_delete_todo
+    '/todo/add': route_add_todo,
+    '/todo/delete': route_delete_todo,
 }

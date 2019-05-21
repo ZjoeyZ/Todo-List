@@ -58,6 +58,22 @@ class Model(object):
         ms = [cls.new(m) for m in models]
         return ms
 
+    @classmethod
+    def findby(cls, **kwargs):
+        """
+        根据kwargs中的参数，找到对象
+        """
+        k = ''
+        v = ''
+        for key, value in kwargs.items():
+            k, v = key, value
+        models = cls.all()
+        for m in models:
+            if m.__dict__[k] == v:
+                return m
+            else:
+                return None
+
     def save(self):
         """
         save 函数用于把一个 Model 的实例保存到文件中
@@ -73,30 +89,42 @@ class Model(object):
             self.id = models[-1].id + 1
             models.append(self)
             log('append last object', self.__dict__)
-        # 若果id != -1 说明之前存在，替换之前的对象
+        # 若果id != -1 说明之前存在，找到之前的对象，并替换
         else:
             for index, m in enumerate(models):
                 if m.id == self.id:
                     models[index] = self
-                    log('repalce one object', self.__dict__)
-                else:
-                    log('index 出现问题 self的id是', self.id)
+                    log('replace one object', self.__dict__)
+                    break
         # __dict__ 是包含了对象所有属性和值的字典
         l = [m.__dict__ for m in models]
         path = self.db_path()
         save(l, path)
 
+    def remove(self):
+        """
+        save 函数用于把一个 Model 的实例从文件中删除
+        """
+        models = self.all()
+        for i, m in enumerate(models):
+            if m.id == self.id:
+                del models[i]
+                break
+        # __dict__ 是包含了对象所有属性和值的字典
+        l = [m.__dict__ for m in models]
+        path = self.db_path()
+        save(l, path)
 
-def __repr__(self):
-    """
-    这是一个 魔法函数 返回 string representation of a object
-    当调用 str(oject) 的时候
-    若没有 __str__
-    就调用 __repr__
-    """
-    # 类名
-    classname = self.__class__.__name__
-    # 所有的属性和值
-    properties = ['{}: ({})'.format(k, v) for k, v in self.__dict__.items()]
-    s = '\n'.join(properties)
-    return '< {}\n{} >\n'.format(classname, s)
+    def __repr__(self):
+        """
+        这是一个 魔法函数 返回 string representation of a object
+        当调用 str(oject) 的时候
+        若没有 __str__
+        就调用 __repr__
+        """
+        # 类名
+        classname = self.__class__.__name__
+        # 所有的属性和值
+        properties = ['{}: ({})'.format(k, v) for k, v in self.__dict__.items()]
+        s = '\n'.join(properties)
+        return '< {}\n{} >\n'.format(classname, s)
