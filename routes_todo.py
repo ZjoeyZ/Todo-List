@@ -38,6 +38,7 @@ def route_todo(request):
     todos = []
     i = 1
     for t in todo_list:
+        delete_button = '<botton>'
         s = '<h3>{} : {}</h3>'.format(i, t.title)
         i = i + 1
         todos.append(s)
@@ -64,4 +65,5 @@ def route_add_todo(request):
 route_todo_dict = {
     '/todo': route_todo,
     '/todo/add': route_add_todo
+    #'/todo/delete': route_delete_todo
 }

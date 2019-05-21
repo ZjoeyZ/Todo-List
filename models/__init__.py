@@ -1,6 +1,7 @@
 import json
 from utils import log
 
+
 def save(data, path):
     """
     本函数把一个 dict 或者 list 写入文件
@@ -10,7 +11,7 @@ def save(data, path):
     # json 是一个序列化/反序列化 list/dict 的库
     # indent 是缩进
     # ensure_ascii=False 用于保存中文
-    #json.dumps 序列化得到json格式字符串
+    # json.dumps 序列化得到json格式字符串
     s = json.dumps(data, indent=2, ensure_ascii=False)
     with open(path, 'w+', encoding='utf-8') as f:
         log('save', path, s, data)
@@ -25,7 +26,7 @@ def load(path):
     with open(path, 'r', encoding='utf-8') as f:
         s = f.read()
         log('load', s)
-        #字符串转字典
+        # 字符串转字典
         return json.loads(s)
 
 
@@ -62,24 +63,40 @@ class Model(object):
         save 函数用于把一个 Model 的实例保存到文件中
         """
         models = self.all()
-        log('models', models)
-        models.append(self)
+        # 如果models为空，则新ID为1
+        if len(models) == 0:
+            self.id = 1
+            models.append(self)
+            log('append 0th object', self.__dict__)
+        # 如果id = -1 说明之前不存在，赋值新id
+        elif self.id == -1:
+            self.id = models[-1].id + 1
+            models.append(self)
+            log('append last object', self.__dict__)
+        # 若果id != -1 说明之前存在，替换之前的对象
+        else:
+            for index, m in enumerate(models):
+                if m.id == self.id:
+                    models[index] = self
+                    log('repalce one object', self.__dict__)
+                else:
+                    log('index 出现问题 self的id是', self.id)
         # __dict__ 是包含了对象所有属性和值的字典
         l = [m.__dict__ for m in models]
         path = self.db_path()
         save(l, path)
 
-    def __repr__(self):
-        """
-        这是一个 魔法函数 返回 string representation of a object
-        当调用 str(oject) 的时候
-        若没有 __str__
-        就调用 __repr__
-        """
-        #类名
-        classname = self.__class__.__name__
-        #所有的属性和值
-        properties = ['{}: ({})'.format(k, v) for k, v in self.__dict__.items()]
-        s = '\n'.join(properties)
-        return '< {}\n{} >\n'.format(classname, s)
 
+def __repr__(self):
+    """
+    这是一个 魔法函数 返回 string representation of a object
+    当调用 str(oject) 的时候
+    若没有 __str__
+    就调用 __repr__
+    """
+    # 类名
+    classname = self.__class__.__name__
+    # 所有的属性和值
+    properties = ['{}: ({})'.format(k, v) for k, v in self.__dict__.items()]
+    s = '\n'.join(properties)
+    return '< {}\n{} >\n'.format(classname, s)
