@@ -1,23 +1,13 @@
 from utils import log
-from models.message import Message
 from models.user import User
 import random
+
 
 def template(name):
     """读取template文件夹下name对应的html文件返回string"""
     path = 'templates/' + name
     with open(path, 'r', encoding='utf-8') as f:
         return f.read()
-
-
-def route_index(request):
-    """
-    主页的处理函数, 返回主页的响应
-    """
-    header = 'HTTP/1.1 210 VERY OK\r\nContent-Type: text/html\r\n'
-    body = template('index.html')
-    r = header + '\r\n' + body
-    return r.encode(encoding='utf-8')
 
 
 session = {}
@@ -28,16 +18,10 @@ def random_str():
     seed = '1234567890qwertyuiopasdfghjkl'
     session_id = ''
     for i in range(16):
-        random_index = random.randint(0, len(seed)-1)
+        random_index = random.randint(0, len(seed) - 1)
         session_id += seed[random_index]
     return session_id
 
-# 1，非post返回登录页面
-# 2，post，：
-#     若检验成功
-#
-#
-#     返回登录成功页面
 
 def route_login(request):
     header = 'HTTP/1.1 210 VERY OK\r\nContent-Type: text/html\r\n{{}}\r\n'
@@ -51,7 +35,7 @@ def route_login(request):
             session[session_id] = u.username
             # 在要返回的headers字段里增加set-cookie字段，加入session
             set_cookie = 'Set-Cookie: user={}'.format(session_id)
-            header.replace('{{}}',set_cookie)
+            header.replace('{{}}', set_cookie)
             result = '登录成功   <a href="/todo">todo list</a>'
         else:
             result = '用户名或者密码错误'
@@ -82,23 +66,12 @@ def route_register(request):
     return r.encode(encoding='utf-8')
 
 
-# message_list 存储了所有的 message
-message_list = []
-
-
-def route_message(request):
-    log('本次请求的 method', request.method)
-    if request.method == 'POST':
-        form = request.form()
-        msg = Message.new(form)
-        log('post', form)
-        message_list.append(msg)
-        log("message_list",message_list)
-    header = 'HTTP/1.1 200 OK\r\nContent-Type: text/html\r\n'
-    body = template('html_basic.html')
-    # '#'.join(['a', 'b', 'c']) 的结果是 'a#b#c'
-    msgs = '<br>'.join([str(m) for m in message_list])
-    body = body.replace('{{messages}}', msgs)
+def route_index(request):
+    """
+    主页的处理函数, 返回主页的响应
+    """
+    header = 'HTTP/1.1 210 VERY OK\r\nContent-Type: text/html\r\n'
+    body = template('index.html')
     r = header + '\r\n' + body
     return r.encode(encoding='utf-8')
 
@@ -111,7 +84,7 @@ def route_static(request):
     path = 'static/' + filename
     with open(path, 'rb') as f:
         header = b'HTTP/1.1 200 OK\r\nContent-Type: image/gif\r\n'
-        img = header + b'\r\n'+ f.read()
+        img = header + b'\r\n' + f.read()
         return img
 
 
@@ -119,5 +92,4 @@ route_dict = {
     '/': route_index,
     '/login': route_login,
     '/register': route_register,
-    '/messages': route_message,
 }

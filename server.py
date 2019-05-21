@@ -5,6 +5,8 @@ from utils import log
 
 from routes import route_static
 from routes import route_dict
+from routes_todo import route_todo_dict
+
 
 
 # 定义一个 class 用于保存请求的数据
@@ -109,6 +111,7 @@ def response_for_path(path):
         # '/messages': route_message,
     }
     r.update(route_dict)
+    r.update(route_todo_dict)
     response = r.get(path, error)
     return response(request)
 
