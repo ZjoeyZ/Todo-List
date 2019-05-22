@@ -56,10 +56,11 @@ class Model(object):
         path = cls.db_path()
         models = load(path)
         ms = [cls.new(m) for m in models]
+        log('所有的对象', ms)
         return ms
 
     @classmethod
-    def findby(cls, **kwargs):
+    def find_by(cls, **kwargs):
         """
         根据kwargs中的参数，找到对象
         """
@@ -67,12 +68,13 @@ class Model(object):
         v = ''
         for key, value in kwargs.items():
             k, v = key, value
+        log('key and value', k, v)
         models = cls.all()
         for m in models:
             if m.__dict__[k] == v:
                 return m
-            else:
-                return None
+        #遍历完了也没找到，返回None
+        return None
 
     def save(self):
         """
