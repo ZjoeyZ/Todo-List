@@ -6,7 +6,7 @@ class User(Model):
     def __init__(self, form):
         self.username = form.get('username', '')
         self.password = form.get('password', '')
-
+        self.id = int(form.get('id', -1))
 
     def exist(self):
         """
@@ -18,8 +18,7 @@ class User(Model):
         for u in users:
             if self.username == u.username and self.password == u.password:
                 return True
-            else:
-                return False
+        return False
 
     def validate_register(self):
         """

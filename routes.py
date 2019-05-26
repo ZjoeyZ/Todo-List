@@ -24,19 +24,21 @@ def random_str():
 
 
 def route_login(request):
-    header = 'HTTP/1.1 210 VERY OK\r\nContent-Type: text/html\r\n{{}}\r\n'
+    header = 'HTTP/1.1 210 VERY OK\r\nContent-Type: text/html\r\n{}\r\n'
     if request.method == 'POST':
         # 生成对象，验证对象
         form = request.form()
         u = User.new(form)
         if u.exist():
+            u = u.find_by(username=u.username)
             #  生成session，与用户名称建立联系
             session_id = random_str()
-            session[session_id] = u.username
+            session[session_id] = u.id
             # 在要返回的headers字段里增加set-cookie字段，加入session
             set_cookie = 'Set-Cookie: user={}'.format(session_id)
-            header.replace('{{}}', set_cookie)
+            header = header.replace('{}', set_cookie)
             result = '登录成功   <a href="/todo">todo list</a>'
+            log('set cookie headers', header)
         else:
             result = '用户名或者密码错误'
     else:

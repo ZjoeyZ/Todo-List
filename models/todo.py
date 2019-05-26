@@ -6,3 +6,4 @@ class Todo(Model):
     def __init__(self, form):
         self.title = form.get('title', '')
         self.id = int(form.get('id', -1))
+        self.user_id = int(form.get('user_id', -1))

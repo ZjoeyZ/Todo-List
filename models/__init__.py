@@ -56,7 +56,6 @@ class Model(object):
         path = cls.db_path()
         models = load(path)
         ms = [cls.new(m) for m in models]
-        log('所有的对象', ms)
         return ms
 
     @classmethod
