@@ -1,31 +1,8 @@
-from utils import log
 from models.user import User
 from models.todo import Todo
 from routes import session
+from utils import *
 
-
-def response_with_headers(headers, code=200):
-    """
-    Content-Type: text/html
-    Set-Cookie: user=gua
-    """
-    header = 'HTTP/1.1 {} OK\r\n'.format(code)
-    header += ''.join(['{}: {}\r\n'.format(k, v)
-                       for k, v in headers.items()])
-    return header
-
-
-def redirect(path):
-    headers = {
-        'Location': path,
-    }
-    return response_with_headers(headers, 302).encode('utf-8')
-
-
-def template(path):
-    path = 'templates/' + path
-    with open(path, 'r', encoding="utf-8") as f:
-        return f.read()
 
 
 def route_todo(request):
@@ -42,21 +19,9 @@ def route_todo(request):
         'Content-Type': 'text/html',
     }
     # 得到所有的todo
-    todo_list = Todo.all()
-    todos = []
-    i = 1
+    todos = Todo.all()
     # 注入属于用户的todo
-    for t in todo_list:
-        if t.id == u_id:
-            delete_href = '<a href="/todo/delete?id={}">删除</a>'.format(t.id)
-            edit_href = '<a href="/todo/edit?id={}">编辑</a>'.format(t.id)
-            s = '<h3>{} : {}  {}  {}</h3>'.format(i, t.title, delete_href, edit_href)
-            i = i + 1
-            todos.append(s)
-    todo_html = ''.join(todos)
-    # 替换模板文件中的标记字符串
-    body = template('todo.html')
-    body = body.replace('{{todos}}', todo_html)
+    body = template('todo.html', todos=todos)
     header = response_with_headers(headers)
     r = header + '\r\n' + body
     return r.encode(encoding='utf-8')
@@ -72,9 +37,7 @@ def route_edit_todo(request):
     todo_id = int(request.query.get('id', -1))
     t = Todo.find_by(id=todo_id)
     # 替换模板文件中的标记字符串
-    body = template('todo_edit.html')
-    body = body.replace('{{todo_id}}', str(t.id))
-    body = body.replace('{{todo_title}}', t.title)
+    body = template('todo_edit.html', todo=t)
     header = response_with_headers(headers)
     r = header + '\r\n' + body
     return r.encode(encoding='utf-8')

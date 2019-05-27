@@ -1,13 +1,7 @@
-from utils import log
+from utils import log, template
 from models.user import User
 import random
 
-
-def template(name):
-    """读取template文件夹下name对应的html文件返回string"""
-    path = 'templates/' + name
-    with open(path, 'r', encoding='utf-8') as f:
-        return f.read()
 
 
 session = {}
@@ -43,8 +37,7 @@ def route_login(request):
             result = '用户名或者密码错误'
     else:
         result = '请登录'
-    body = template('login.html')
-    body = body.replace('{{result}}', result)
+    body = template('login.html', result=result)
     r = header + '\r\n' + body
     return r.encode(encoding='utf-8')
 
@@ -62,8 +55,7 @@ def route_register(request):
             result = '用户名或者密码长度必须大于2'
     else:
         result = ''
-    body = template('register.html')
-    body = body.replace('{{result}}', result)
+    body = template('register.html', result=result)
     r = header + '\r\n' + body
     return r.encode(encoding='utf-8')
 
