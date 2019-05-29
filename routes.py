@@ -6,6 +6,10 @@ import random
 
 session = {}
 
+def get_uid(request):
+    session_id = request.cookies.get('user', '')
+    u_id = session.get(session_id, -1)
+    return u_id
 
 def random_str():
     '''生成一个随机字符串'''
@@ -39,6 +43,7 @@ def route_login(request):
         result = '请登录'
     body = template('login.html', result=result)
     r = header + '\r\n' + body
+    log('login 的响应', r)
     return r.encode(encoding='utf-8')
 
 

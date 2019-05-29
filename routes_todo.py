@@ -1,6 +1,6 @@
 from models.user import User
 from models.todo import Todo
-from routes import session
+from routes import get_uid
 from utils import *
 
 
@@ -9,10 +9,7 @@ def route_todo(request):
     """
     todo_list 首页的路由函数
     """
-    log("cookies", request.cookies)
-    session_id = request.cookies.get('user')
-    log('route todo session_id and session', session_id, session)
-    u_id = session.get(session_id, -1)
+    u_id = get_uid(request)
     if u_id == -1:
         return redirect('login')
     headers = {
@@ -48,8 +45,7 @@ def route_add_todo(request):
     增加一个todo的处理函数
     """
     # 得到用户信息
-    session_id = request.cookies.get('user')
-    u_id = session.get(session_id, -1)
+    u_id = get_uid(request)
     if u_id == -1:
         return redirect('login')
     form = request.form()
@@ -65,9 +61,7 @@ def route_update_todo(request):
     删除一个todo的处理函数
     """
     # 得到用户信息
-    session_id = request.cookies.get('user')
-    log('route todo session_id and session', session_id, session)
-    u_id = session.get(session_id, -1)
+    u_id = get_uid(request)
     # 得到todo对象
     form = request.form()
     todo_id = int(form.get('id', None))

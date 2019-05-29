@@ -144,10 +144,10 @@ def run(host='', port=3000):
             request.method = r.split()[0]
             # 把 body 放入 request 中
             request.body = r.split('\r\n\r\n', 1)[1]
+             # 用add_headers函数来得到headers和cookies
+            request.add_headers(r.split('\r\n\r\n', 1)[0].split('\r\n')[1:])
             # 用 response_for_path 函数来得到 path 对应的响应内容
             response = response_for_path(path)
-            # 用add_headers函数来得到headers和cookies
-            request.add_headers(r.split('\r\n\r\n', 1)[0].split('\r\n')[1:])
             # 把响应发送给客户端
             log("going to send")
             connection.sendall(response)
