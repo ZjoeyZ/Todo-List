@@ -62,7 +62,7 @@
             1. 根据POST请求，删除指定todo，并保存
                返回一个重定位到/todo的response
         
-# 将Todo_list应用和用户联系起来，让每个用户只能对自己的todo-list进行操作 
+# 让每个用户只能对自己的todo-list进行操作 
    - 给User对象增加id属性，user注册时会分配id，用户登录时分配的session_id和id对应
    - Todo对象的增加user_id属性，
    - 所以要让用户先登录，在使用todo_list，没登录返回重定位
