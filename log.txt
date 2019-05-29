@@ -1,0 +1,821 @@
+12:22:19 start at :3000
+12:22:27 原始请求
+ GET / HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Cookie: Pycharm-3c3c9ca5=208607f3-b6b6-4fd8-86be-a71f7a1ed9dc; user=oo9lwgpswf3rgwi7
+Upgrade-Insecure-Requests: 1
+
+
+12:22:27 headers {'Host': 'localhost:3000', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'Accept-Language': 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2', 'Accept-Encoding': 'gzip, deflate', 'Connection': 'keep-alive', 'Cookie': 'Pycharm-3c3c9ca5=208607f3-b6b6-4fd8-86be-a71f7a1ed9dc; user=oo9lwgpswf3rgwi7', 'Upgrade-Insecure-Requests': '1'}
+12:22:27 cookies {'Pycharm-3c3c9ca5': '208607f3-b6b6-4fd8-86be-a71f7a1ed9dc', 'user': 'oo9lwgpswf3rgwi7'}
+12:22:27 path and query / {}
+12:22:27 going to send
+12:22:27 send successfully
+12:22:27 close successfully
+
+
+12:22:27 原始请求
+ GET /static?file=doge.gif HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0
+Accept: image/webp,*/*
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Referer: http://localhost:3000/
+Connection: keep-alive
+Cookie: Pycharm-3c3c9ca5=208607f3-b6b6-4fd8-86be-a71f7a1ed9dc; user=oo9lwgpswf3rgwi7
+
+
+12:22:27 headers {'Host': 'localhost:3000', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0', 'Accept': 'image/webp,*/*', 'Accept-Language': 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2', 'Accept-Encoding': 'gzip, deflate', 'Referer': 'http://localhost:3000/', 'Connection': 'keep-alive', 'Cookie': 'Pycharm-3c3c9ca5=208607f3-b6b6-4fd8-86be-a71f7a1ed9dc; user=oo9lwgpswf3rgwi7'}
+12:22:27 cookies {'Pycharm-3c3c9ca5': '208607f3-b6b6-4fd8-86be-a71f7a1ed9dc', 'user': 'oo9lwgpswf3rgwi7'}
+12:22:27 path and query /static {'file': 'doge.gif'}
+12:22:27 going to send
+12:22:27 send successfully
+12:22:27 close successfully
+
+
+12:22:27 原始请求
+ GET /static?file=doge1.jpg HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0
+Accept: image/webp,*/*
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Referer: http://localhost:3000/
+Connection: keep-alive
+Cookie: Pycharm-3c3c9ca5=208607f3-b6b6-4fd8-86be-a71f7a1ed9dc; user=oo9lwgpswf3rgwi7
+
+
+12:22:27 headers {'Host': 'localhost:3000', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0', 'Accept': 'image/webp,*/*', 'Accept-Language': 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2', 'Accept-Encoding': 'gzip, deflate', 'Referer': 'http://localhost:3000/', 'Connection': 'keep-alive', 'Cookie': 'Pycharm-3c3c9ca5=208607f3-b6b6-4fd8-86be-a71f7a1ed9dc; user=oo9lwgpswf3rgwi7'}
+12:22:27 cookies {'Pycharm-3c3c9ca5': '208607f3-b6b6-4fd8-86be-a71f7a1ed9dc', 'user': 'oo9lwgpswf3rgwi7'}
+12:22:27 path and query /static {'file': 'doge1.jpg'}
+12:22:27 going to send
+12:22:27 send successfully
+12:22:27 close successfully
+
+
+12:22:27 原始请求
+ GET /static?file=doge2.gif HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0
+Accept: image/webp,*/*
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Referer: http://localhost:3000/
+Connection: keep-alive
+Cookie: Pycharm-3c3c9ca5=208607f3-b6b6-4fd8-86be-a71f7a1ed9dc; user=oo9lwgpswf3rgwi7
+
+
+12:22:27 headers {'Host': 'localhost:3000', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0', 'Accept': 'image/webp,*/*', 'Accept-Language': 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2', 'Accept-Encoding': 'gzip, deflate', 'Referer': 'http://localhost:3000/', 'Connection': 'keep-alive', 'Cookie': 'Pycharm-3c3c9ca5=208607f3-b6b6-4fd8-86be-a71f7a1ed9dc; user=oo9lwgpswf3rgwi7'}
+12:22:27 cookies {'Pycharm-3c3c9ca5': '208607f3-b6b6-4fd8-86be-a71f7a1ed9dc', 'user': 'oo9lwgpswf3rgwi7'}
+12:22:27 path and query /static {'file': 'doge2.gif'}
+12:22:27 going to send
+12:22:27 send successfully
+12:22:27 close successfully
+
+
+12:22:33 原始请求
+ 
+12:22:33 空请求 []
+12:22:35 原始请求
+ GET /register HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Cookie: Pycharm-3c3c9ca5=208607f3-b6b6-4fd8-86be-a71f7a1ed9dc; user=oo9lwgpswf3rgwi7
+Upgrade-Insecure-Requests: 1
+
+
+12:22:35 headers {'Host': 'localhost:3000', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'Accept-Language': 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2', 'Accept-Encoding': 'gzip, deflate', 'Connection': 'keep-alive', 'Cookie': 'Pycharm-3c3c9ca5=208607f3-b6b6-4fd8-86be-a71f7a1ed9dc; user=oo9lwgpswf3rgwi7', 'Upgrade-Insecure-Requests': '1'}
+12:22:35 cookies {'Pycharm-3c3c9ca5': '208607f3-b6b6-4fd8-86be-a71f7a1ed9dc', 'user': 'oo9lwgpswf3rgwi7'}
+12:22:35 path and query /register {}
+12:22:35 going to send
+12:22:35 send successfully
+12:22:35 close successfully
+
+
+12:23:00 原始请求
+ POST /register HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Referer: http://localhost:3000/register
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 25
+Connection: keep-alive
+Cookie: Pycharm-3c3c9ca5=208607f3-b6b6-4fd8-86be-a71f7a1ed9dc; user=oo9lwgpswf3rgwi7
+Upgrade-Insecure-Requests: 1
+
+username=zhu&password=123
+12:23:00 headers {'Host': 'localhost:3000', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'Accept-Language': 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2', 'Accept-Encoding': 'gzip, deflate', 'Referer': 'http://localhost:3000/register', 'Content-Type': 'application/x-www-form-urlencoded', 'Content-Length': '25', 'Connection': 'keep-alive', 'Cookie': 'Pycharm-3c3c9ca5=208607f3-b6b6-4fd8-86be-a71f7a1ed9dc; user=oo9lwgpswf3rgwi7', 'Upgrade-Insecure-Requests': '1'}
+12:23:00 cookies {'Pycharm-3c3c9ca5': '208607f3-b6b6-4fd8-86be-a71f7a1ed9dc', 'user': 'oo9lwgpswf3rgwi7'}
+12:23:00 path and query /register {}
+12:23:13 start at :3000
+12:23:14 原始请求
+ POST /register HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Referer: http://localhost:3000/register
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 25
+Connection: keep-alive
+Cookie: Pycharm-3c3c9ca5=208607f3-b6b6-4fd8-86be-a71f7a1ed9dc; user=oo9lwgpswf3rgwi7
+Upgrade-Insecure-Requests: 1
+
+username=zhu&password=123
+12:23:14 headers {'Host': 'localhost:3000', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'Accept-Language': 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2', 'Accept-Encoding': 'gzip, deflate', 'Referer': 'http://localhost:3000/register', 'Content-Type': 'application/x-www-form-urlencoded', 'Content-Length': '25', 'Connection': 'keep-alive', 'Cookie': 'Pycharm-3c3c9ca5=208607f3-b6b6-4fd8-86be-a71f7a1ed9dc; user=oo9lwgpswf3rgwi7', 'Upgrade-Insecure-Requests': '1'}
+12:23:14 cookies {'Pycharm-3c3c9ca5': '208607f3-b6b6-4fd8-86be-a71f7a1ed9dc', 'user': 'oo9lwgpswf3rgwi7'}
+12:23:14 path and query /register {}
+12:23:44 start at :3000
+12:23:45 原始请求
+ POST /register HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Referer: http://localhost:3000/register
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 25
+Connection: keep-alive
+Cookie: Pycharm-3c3c9ca5=208607f3-b6b6-4fd8-86be-a71f7a1ed9dc; user=oo9lwgpswf3rgwi7
+Upgrade-Insecure-Requests: 1
+
+username=zhu&password=123
+12:23:45 headers {'Host': 'localhost:3000', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'Accept-Language': 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2', 'Accept-Encoding': 'gzip, deflate', 'Referer': 'http://localhost:3000/register', 'Content-Type': 'application/x-www-form-urlencoded', 'Content-Length': '25', 'Connection': 'keep-alive', 'Cookie': 'Pycharm-3c3c9ca5=208607f3-b6b6-4fd8-86be-a71f7a1ed9dc; user=oo9lwgpswf3rgwi7', 'Upgrade-Insecure-Requests': '1'}
+12:23:45 cookies {'Pycharm-3c3c9ca5': '208607f3-b6b6-4fd8-86be-a71f7a1ed9dc', 'user': 'oo9lwgpswf3rgwi7'}
+12:23:45 path and query /register {}
+12:24:19 start at :3000
+12:24:20 原始请求
+ POST /register HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Referer: http://localhost:3000/register
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 25
+Connection: keep-alive
+Cookie: Pycharm-3c3c9ca5=208607f3-b6b6-4fd8-86be-a71f7a1ed9dc; user=oo9lwgpswf3rgwi7
+Upgrade-Insecure-Requests: 1
+
+username=zhu&password=123
+12:24:20 headers {'Host': 'localhost:3000', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'Accept-Language': 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2', 'Accept-Encoding': 'gzip, deflate', 'Referer': 'http://localhost:3000/register', 'Content-Type': 'application/x-www-form-urlencoded', 'Content-Length': '25', 'Connection': 'keep-alive', 'Cookie': 'Pycharm-3c3c9ca5=208607f3-b6b6-4fd8-86be-a71f7a1ed9dc; user=oo9lwgpswf3rgwi7', 'Upgrade-Insecure-Requests': '1'}
+12:24:20 cookies {'Pycharm-3c3c9ca5': '208607f3-b6b6-4fd8-86be-a71f7a1ed9dc', 'user': 'oo9lwgpswf3rgwi7'}
+12:24:20 path and query /register {}
+12:24:20 load []
+
+12:24:20 append 0th object {'username': 'zhu', 'password': '40bd001563085fc35165329ea1ff5c5ecbdbbeef', 'id': 1}
+12:24:20 save db/User.txt [
+  {
+    "username": "zhu",
+    "password": "40bd001563085fc35165329ea1ff5c5ecbdbbeef",
+    "id": 1
+  }
+] [{'username': 'zhu', 'password': '40bd001563085fc35165329ea1ff5c5ecbdbbeef', 'id': 1}]
+12:24:20 going to send
+12:24:20 send successfully
+12:24:20 close successfully
+
+
+12:24:26 原始请求
+ 
+12:24:26 空请求 []
+12:24:31 原始请求
+ GET /login HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Referer: http://localhost:3000/register
+Connection: keep-alive
+Cookie: Pycharm-3c3c9ca5=208607f3-b6b6-4fd8-86be-a71f7a1ed9dc; user=oo9lwgpswf3rgwi7
+Upgrade-Insecure-Requests: 1
+
+
+12:24:31 headers {'Host': 'localhost:3000', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'Accept-Language': 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2', 'Accept-Encoding': 'gzip, deflate', 'Referer': 'http://localhost:3000/register', 'Connection': 'keep-alive', 'Cookie': 'Pycharm-3c3c9ca5=208607f3-b6b6-4fd8-86be-a71f7a1ed9dc; user=oo9lwgpswf3rgwi7', 'Upgrade-Insecure-Requests': '1'}
+12:24:31 cookies {'Pycharm-3c3c9ca5': '208607f3-b6b6-4fd8-86be-a71f7a1ed9dc', 'user': 'oo9lwgpswf3rgwi7'}
+12:24:31 path and query /login {}
+12:24:31 login 的响应 HTTP/1.1 210 VERY OK
+Content-Type: text/html
+{}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册登录页面</title>
+</head>
+<body>
+    <h1>登录</h1>
+    <form action="/login" method="post">
+        <input type="text" name="username" placeholder="请输入用户名">
+        <br>
+        <input type="text" name="password" placeholder="请输入密码">
+        <br>
+        <button type="submit">登录</button>
+    </form>
+    <h3>请登录</h3>
+</body>
+</html>
+12:24:31 going to send
+12:24:31 send successfully
+12:24:31 close successfully
+
+
+12:24:34 原始请求
+ POST /login HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Referer: http://localhost:3000/login
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 25
+Connection: keep-alive
+Cookie: Pycharm-3c3c9ca5=208607f3-b6b6-4fd8-86be-a71f7a1ed9dc; user=oo9lwgpswf3rgwi7
+Upgrade-Insecure-Requests: 1
+
+username=zhu&password=123
+12:24:34 headers {'Host': 'localhost:3000', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'Accept-Language': 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2', 'Accept-Encoding': 'gzip, deflate', 'Referer': 'http://localhost:3000/login', 'Content-Type': 'application/x-www-form-urlencoded', 'Content-Length': '25', 'Connection': 'keep-alive', 'Cookie': 'Pycharm-3c3c9ca5=208607f3-b6b6-4fd8-86be-a71f7a1ed9dc; user=oo9lwgpswf3rgwi7', 'Upgrade-Insecure-Requests': '1'}
+12:24:34 cookies {'Pycharm-3c3c9ca5': '208607f3-b6b6-4fd8-86be-a71f7a1ed9dc', 'user': 'oo9lwgpswf3rgwi7'}
+12:24:34 path and query /login {}
+12:24:34 load [
+  {
+    "username": "zhu",
+    "password": "40bd001563085fc35165329ea1ff5c5ecbdbbeef",
+    "id": 1
+  }
+]
+12:24:34 key and value username zhu
+12:24:34 load [
+  {
+    "username": "zhu",
+    "password": "40bd001563085fc35165329ea1ff5c5ecbdbbeef",
+    "id": 1
+  }
+]
+12:24:34 set cookie headers HTTP/1.1 210 VERY OK
+Content-Type: text/html
+Set-Cookie: user=t3q8j57g096aasyk
+
+12:24:34 login 的响应 HTTP/1.1 210 VERY OK
+Content-Type: text/html
+Set-Cookie: user=t3q8j57g096aasyk
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册登录页面</title>
+</head>
+<body>
+    <h1>登录</h1>
+    <form action="/login" method="post">
+        <input type="text" name="username" placeholder="请输入用户名">
+        <br>
+        <input type="text" name="password" placeholder="请输入密码">
+        <br>
+        <button type="submit">登录</button>
+    </form>
+    <h3>登录成功   <a href="/todo">todo list</a></h3>
+</body>
+</html>
+12:24:34 going to send
+12:24:34 send successfully
+12:24:34 close successfully
+
+
+12:24:35 原始请求
+ GET /todo HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Referer: http://localhost:3000/login
+Connection: keep-alive
+Cookie: Pycharm-3c3c9ca5=208607f3-b6b6-4fd8-86be-a71f7a1ed9dc; user=t3q8j57g096aasyk
+Upgrade-Insecure-Requests: 1
+
+
+12:24:35 headers {'Host': 'localhost:3000', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'Accept-Language': 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2', 'Accept-Encoding': 'gzip, deflate', 'Referer': 'http://localhost:3000/login', 'Connection': 'keep-alive', 'Cookie': 'Pycharm-3c3c9ca5=208607f3-b6b6-4fd8-86be-a71f7a1ed9dc; user=t3q8j57g096aasyk', 'Upgrade-Insecure-Requests': '1'}
+12:24:35 cookies {'Pycharm-3c3c9ca5': '208607f3-b6b6-4fd8-86be-a71f7a1ed9dc', 'user': 't3q8j57g096aasyk'}
+12:24:35 path and query /todo {}
+12:24:35 load [
+  {
+    "title": "123",
+    "id": 1,
+    "user_id": 1
+  }
+]
+12:24:35 going to send
+12:24:35 send successfully
+12:24:35 close successfully
+
+
+12:24:47 原始请求
+ GET /todo/delete?id=1 HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Referer: http://localhost:3000/todo
+Connection: keep-alive
+Cookie: Pycharm-3c3c9ca5=208607f3-b6b6-4fd8-86be-a71f7a1ed9dc; user=t3q8j57g096aasyk
+Upgrade-Insecure-Requests: 1
+
+
+12:24:47 headers {'Host': 'localhost:3000', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'Accept-Language': 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2', 'Accept-Encoding': 'gzip, deflate', 'Referer': 'http://localhost:3000/todo', 'Connection': 'keep-alive', 'Cookie': 'Pycharm-3c3c9ca5=208607f3-b6b6-4fd8-86be-a71f7a1ed9dc; user=t3q8j57g096aasyk', 'Upgrade-Insecure-Requests': '1'}
+12:24:47 cookies {'Pycharm-3c3c9ca5': '208607f3-b6b6-4fd8-86be-a71f7a1ed9dc', 'user': 't3q8j57g096aasyk'}
+12:24:47 path and query /todo/delete {'id': '1'}
+12:24:47 key and value id 1
+12:24:47 load [
+  {
+    "title": "123",
+    "id": 1,
+    "user_id": 1
+  }
+]
+12:24:47 load [
+  {
+    "title": "123",
+    "id": 1,
+    "user_id": 1
+  }
+]
+12:24:47 save db/Todo.txt [] []
+12:24:47 going to send
+12:24:47 send successfully
+12:24:47 close successfully
+
+
+12:24:47 原始请求
+ GET /todo HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Referer: http://localhost:3000/todo
+Connection: keep-alive
+Cookie: Pycharm-3c3c9ca5=208607f3-b6b6-4fd8-86be-a71f7a1ed9dc; user=t3q8j57g096aasyk
+Upgrade-Insecure-Requests: 1
+
+
+12:24:47 headers {'Host': 'localhost:3000', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'Accept-Language': 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2', 'Accept-Encoding': 'gzip, deflate', 'Referer': 'http://localhost:3000/todo', 'Connection': 'keep-alive', 'Cookie': 'Pycharm-3c3c9ca5=208607f3-b6b6-4fd8-86be-a71f7a1ed9dc; user=t3q8j57g096aasyk', 'Upgrade-Insecure-Requests': '1'}
+12:24:47 cookies {'Pycharm-3c3c9ca5': '208607f3-b6b6-4fd8-86be-a71f7a1ed9dc', 'user': 't3q8j57g096aasyk'}
+12:24:47 path and query /todo {}
+12:24:47 load []
+12:24:47 going to send
+12:24:47 send successfully
+12:24:47 close successfully
+
+
+12:33:42 start at :3000
+12:33:52 原始请求
+ GET /register HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Cookie: Pycharm-3c3c9ca5=208607f3-b6b6-4fd8-86be-a71f7a1ed9dc; user=t3q8j57g096aasyk
+Upgrade-Insecure-Requests: 1
+
+
+12:33:52 headers {'Host': 'localhost:3000', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'Accept-Language': 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2', 'Accept-Encoding': 'gzip, deflate', 'Connection': 'keep-alive', 'Cookie': 'Pycharm-3c3c9ca5=208607f3-b6b6-4fd8-86be-a71f7a1ed9dc; user=t3q8j57g096aasyk', 'Upgrade-Insecure-Requests': '1'}
+12:33:52 cookies {'Pycharm-3c3c9ca5': '208607f3-b6b6-4fd8-86be-a71f7a1ed9dc', 'user': 't3q8j57g096aasyk'}
+12:33:52 path and query /register {}
+12:33:52 going to send
+12:33:52 send successfully
+12:33:52 close successfully
+
+
+12:33:56 原始请求
+ POST /register HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Referer: http://localhost:3000/register
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 26
+Connection: keep-alive
+Cookie: Pycharm-3c3c9ca5=208607f3-b6b6-4fd8-86be-a71f7a1ed9dc; user=t3q8j57g096aasyk
+Upgrade-Insecure-Requests: 1
+
+username=zhu&password=1234
+12:33:56 headers {'Host': 'localhost:3000', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'Accept-Language': 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2', 'Accept-Encoding': 'gzip, deflate', 'Referer': 'http://localhost:3000/register', 'Content-Type': 'application/x-www-form-urlencoded', 'Content-Length': '26', 'Connection': 'keep-alive', 'Cookie': 'Pycharm-3c3c9ca5=208607f3-b6b6-4fd8-86be-a71f7a1ed9dc; user=t3q8j57g096aasyk', 'Upgrade-Insecure-Requests': '1'}
+12:33:56 cookies {'Pycharm-3c3c9ca5': '208607f3-b6b6-4fd8-86be-a71f7a1ed9dc', 'user': 't3q8j57g096aasyk'}
+12:33:56 path and query /register {}
+12:33:56 load [
+  {
+    "username": "zhu",
+    "password": "40bd001563085fc35165329ea1ff5c5ecbdbbeef",
+    "id": 1
+  }
+]
+12:33:56 append last object {'username': 'zhu', 'password': '944faceccdf14445bf7ac79c3021cf55af3abd36', 'id': 2}
+12:33:56 save db/User.txt [
+  {
+    "username": "zhu",
+    "password": "40bd001563085fc35165329ea1ff5c5ecbdbbeef",
+    "id": 1
+  },
+  {
+    "username": "zhu",
+    "password": "944faceccdf14445bf7ac79c3021cf55af3abd36",
+    "id": 2
+  }
+] [{'username': 'zhu', 'password': '40bd001563085fc35165329ea1ff5c5ecbdbbeef', 'id': 1}, {'username': 'zhu', 'password': '944faceccdf14445bf7ac79c3021cf55af3abd36', 'id': 2}]
+12:33:56 going to send
+12:33:56 send successfully
+12:33:56 close successfully
+
+
+12:33:58 原始请求
+ GET /login HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Referer: http://localhost:3000/register
+Connection: keep-alive
+Cookie: Pycharm-3c3c9ca5=208607f3-b6b6-4fd8-86be-a71f7a1ed9dc; user=t3q8j57g096aasyk
+Upgrade-Insecure-Requests: 1
+
+
+12:33:58 headers {'Host': 'localhost:3000', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'Accept-Language': 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2', 'Accept-Encoding': 'gzip, deflate', 'Referer': 'http://localhost:3000/register', 'Connection': 'keep-alive', 'Cookie': 'Pycharm-3c3c9ca5=208607f3-b6b6-4fd8-86be-a71f7a1ed9dc; user=t3q8j57g096aasyk', 'Upgrade-Insecure-Requests': '1'}
+12:33:58 cookies {'Pycharm-3c3c9ca5': '208607f3-b6b6-4fd8-86be-a71f7a1ed9dc', 'user': 't3q8j57g096aasyk'}
+12:33:58 path and query /login {}
+12:33:58 login 的响应 HTTP/1.1 210 VERY OK
+Content-Type: text/html
+{}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册登录页面</title>
+</head>
+<body>
+    <h1>登录</h1>
+    <form action="/login" method="post">
+        <input type="text" name="username" placeholder="请输入用户名">
+        <br>
+        <input type="text" name="password" placeholder="请输入密码">
+        <br>
+        <button type="submit">登录</button>
+    </form>
+    <h3>请登录</h3>
+</body>
+</html>
+12:33:58 going to send
+12:33:58 send successfully
+12:33:58 close successfully
+
+
+12:34:01 原始请求
+ POST /login HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Referer: http://localhost:3000/login
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 26
+Connection: keep-alive
+Cookie: Pycharm-3c3c9ca5=208607f3-b6b6-4fd8-86be-a71f7a1ed9dc; user=t3q8j57g096aasyk
+Upgrade-Insecure-Requests: 1
+
+username=zhu&password=1234
+12:34:01 headers {'Host': 'localhost:3000', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'Accept-Language': 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2', 'Accept-Encoding': 'gzip, deflate', 'Referer': 'http://localhost:3000/login', 'Content-Type': 'application/x-www-form-urlencoded', 'Content-Length': '26', 'Connection': 'keep-alive', 'Cookie': 'Pycharm-3c3c9ca5=208607f3-b6b6-4fd8-86be-a71f7a1ed9dc; user=t3q8j57g096aasyk', 'Upgrade-Insecure-Requests': '1'}
+12:34:01 cookies {'Pycharm-3c3c9ca5': '208607f3-b6b6-4fd8-86be-a71f7a1ed9dc', 'user': 't3q8j57g096aasyk'}
+12:34:01 path and query /login {}
+12:34:01 load [
+  {
+    "username": "zhu",
+    "password": "40bd001563085fc35165329ea1ff5c5ecbdbbeef",
+    "id": 1
+  },
+  {
+    "username": "zhu",
+    "password": "944faceccdf14445bf7ac79c3021cf55af3abd36",
+    "id": 2
+  }
+]
+12:34:01 key and value username zhu
+12:34:01 load [
+  {
+    "username": "zhu",
+    "password": "40bd001563085fc35165329ea1ff5c5ecbdbbeef",
+    "id": 1
+  },
+  {
+    "username": "zhu",
+    "password": "944faceccdf14445bf7ac79c3021cf55af3abd36",
+    "id": 2
+  }
+]
+12:34:01 set cookie headers HTTP/1.1 210 VERY OK
+Content-Type: text/html
+Set-Cookie: user=kp9w6eyt4tw3wkw0
+
+12:34:01 login 的响应 HTTP/1.1 210 VERY OK
+Content-Type: text/html
+Set-Cookie: user=kp9w6eyt4tw3wkw0
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册登录页面</title>
+</head>
+<body>
+    <h1>登录</h1>
+    <form action="/login" method="post">
+        <input type="text" name="username" placeholder="请输入用户名">
+        <br>
+        <input type="text" name="password" placeholder="请输入密码">
+        <br>
+        <button type="submit">登录</button>
+    </form>
+    <h3>登录成功   <a href="/todo">todo list</a></h3>
+</body>
+</html>
+12:34:01 going to send
+12:34:01 send successfully
+12:34:01 close successfully
+
+
+12:34:03 原始请求
+ GET /todo HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Referer: http://localhost:3000/login
+Connection: keep-alive
+Cookie: Pycharm-3c3c9ca5=208607f3-b6b6-4fd8-86be-a71f7a1ed9dc; user=kp9w6eyt4tw3wkw0
+Upgrade-Insecure-Requests: 1
+
+
+12:34:03 headers {'Host': 'localhost:3000', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'Accept-Language': 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2', 'Accept-Encoding': 'gzip, deflate', 'Referer': 'http://localhost:3000/login', 'Connection': 'keep-alive', 'Cookie': 'Pycharm-3c3c9ca5=208607f3-b6b6-4fd8-86be-a71f7a1ed9dc; user=kp9w6eyt4tw3wkw0', 'Upgrade-Insecure-Requests': '1'}
+12:34:03 cookies {'Pycharm-3c3c9ca5': '208607f3-b6b6-4fd8-86be-a71f7a1ed9dc', 'user': 'kp9w6eyt4tw3wkw0'}
+12:34:03 path and query /todo {}
+12:34:03 load []
+12:34:03 going to send
+12:34:03 send successfully
+12:34:03 close successfully
+
+
+12:34:12 原始请求
+ POST /todo/add HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Referer: http://localhost:3000/todo
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 24
+Connection: keep-alive
+Cookie: Pycharm-3c3c9ca5=208607f3-b6b6-4fd8-86be-a71f7a1ed9dc; user=kp9w6eyt4tw3wkw0
+Upgrade-Insecure-Requests: 1
+
+title=%E5%90%83%E9%A5%AD
+12:34:12 headers {'Host': 'localhost:3000', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'Accept-Language': 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2', 'Accept-Encoding': 'gzip, deflate', 'Referer': 'http://localhost:3000/todo', 'Content-Type': 'application/x-www-form-urlencoded', 'Content-Length': '24', 'Connection': 'keep-alive', 'Cookie': 'Pycharm-3c3c9ca5=208607f3-b6b6-4fd8-86be-a71f7a1ed9dc; user=kp9w6eyt4tw3wkw0', 'Upgrade-Insecure-Requests': '1'}
+12:34:12 cookies {'Pycharm-3c3c9ca5': '208607f3-b6b6-4fd8-86be-a71f7a1ed9dc', 'user': 'kp9w6eyt4tw3wkw0'}
+12:34:12 path and query /todo/add {}
+12:34:12 load []
+12:34:12 append 0th object {'title': '吃饭', 'id': 1, 'user_id': 1}
+12:34:12 save db/Todo.txt [
+  {
+    "title": "吃饭",
+    "id": 1,
+    "user_id": 1
+  }
+] [{'title': '吃饭', 'id': 1, 'user_id': 1}]
+12:34:12 going to send
+12:34:12 send successfully
+12:34:12 close successfully
+
+
+12:34:12 原始请求
+ GET /todo HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Referer: http://localhost:3000/todo
+Connection: keep-alive
+Cookie: Pycharm-3c3c9ca5=208607f3-b6b6-4fd8-86be-a71f7a1ed9dc; user=kp9w6eyt4tw3wkw0
+Upgrade-Insecure-Requests: 1
+
+
+12:34:12 headers {'Host': 'localhost:3000', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'Accept-Language': 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2', 'Accept-Encoding': 'gzip, deflate', 'Referer': 'http://localhost:3000/todo', 'Connection': 'keep-alive', 'Cookie': 'Pycharm-3c3c9ca5=208607f3-b6b6-4fd8-86be-a71f7a1ed9dc; user=kp9w6eyt4tw3wkw0', 'Upgrade-Insecure-Requests': '1'}
+12:34:12 cookies {'Pycharm-3c3c9ca5': '208607f3-b6b6-4fd8-86be-a71f7a1ed9dc', 'user': 'kp9w6eyt4tw3wkw0'}
+12:34:12 path and query /todo {}
+12:34:12 load [
+  {
+    "title": "吃饭",
+    "id": 1,
+    "user_id": 1
+  }
+]
+12:34:12 going to send
+12:34:12 send successfully
+12:34:12 close successfully
+
+
+12:34:18 原始请求
+ POST /todo/add HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Referer: http://localhost:3000/todo
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 24
+Connection: keep-alive
+Cookie: Pycharm-3c3c9ca5=208607f3-b6b6-4fd8-86be-a71f7a1ed9dc; user=kp9w6eyt4tw3wkw0
+Upgrade-Insecure-Requests: 1
+
+title=%E7%9D%A1%E8%A7%89
+12:34:18 headers {'Host': 'localhost:3000', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'Accept-Language': 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2', 'Accept-Encoding': 'gzip, deflate', 'Referer': 'http://localhost:3000/todo', 'Content-Type': 'application/x-www-form-urlencoded', 'Content-Length': '24', 'Connection': 'keep-alive', 'Cookie': 'Pycharm-3c3c9ca5=208607f3-b6b6-4fd8-86be-a71f7a1ed9dc; user=kp9w6eyt4tw3wkw0', 'Upgrade-Insecure-Requests': '1'}
+12:34:18 cookies {'Pycharm-3c3c9ca5': '208607f3-b6b6-4fd8-86be-a71f7a1ed9dc', 'user': 'kp9w6eyt4tw3wkw0'}
+12:34:18 path and query /todo/add {}
+12:34:18 load [
+  {
+    "title": "吃饭",
+    "id": 1,
+    "user_id": 1
+  }
+]
+12:34:18 append last object {'title': '睡觉', 'id': 2, 'user_id': 1}
+12:34:18 save db/Todo.txt [
+  {
+    "title": "吃饭",
+    "id": 1,
+    "user_id": 1
+  },
+  {
+    "title": "睡觉",
+    "id": 2,
+    "user_id": 1
+  }
+] [{'title': '吃饭', 'id': 1, 'user_id': 1}, {'title': '睡觉', 'id': 2, 'user_id': 1}]
+12:34:18 going to send
+12:34:18 send successfully
+12:34:18 close successfully
+
+
+12:34:18 原始请求
+ GET /todo HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Referer: http://localhost:3000/todo
+Connection: keep-alive
+Cookie: Pycharm-3c3c9ca5=208607f3-b6b6-4fd8-86be-a71f7a1ed9dc; user=kp9w6eyt4tw3wkw0
+Upgrade-Insecure-Requests: 1
+
+
+12:34:18 headers {'Host': 'localhost:3000', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'Accept-Language': 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2', 'Accept-Encoding': 'gzip, deflate', 'Referer': 'http://localhost:3000/todo', 'Connection': 'keep-alive', 'Cookie': 'Pycharm-3c3c9ca5=208607f3-b6b6-4fd8-86be-a71f7a1ed9dc; user=kp9w6eyt4tw3wkw0', 'Upgrade-Insecure-Requests': '1'}
+12:34:18 cookies {'Pycharm-3c3c9ca5': '208607f3-b6b6-4fd8-86be-a71f7a1ed9dc', 'user': 'kp9w6eyt4tw3wkw0'}
+12:34:18 path and query /todo {}
+12:34:18 load [
+  {
+    "title": "吃饭",
+    "id": 1,
+    "user_id": 1
+  },
+  {
+    "title": "睡觉",
+    "id": 2,
+    "user_id": 1
+  }
+]
+12:34:18 going to send
+12:34:18 send successfully
+12:34:18 close successfully
+
+
+12:34:23 原始请求
+ POST /todo/add HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Referer: http://localhost:3000/todo
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 24
+Connection: keep-alive
+Cookie: Pycharm-3c3c9ca5=208607f3-b6b6-4fd8-86be-a71f7a1ed9dc; user=kp9w6eyt4tw3wkw0
+Upgrade-Insecure-Requests: 1
+
+title=%E6%8B%89%E5%B1%8E
+12:34:23 headers {'Host': 'localhost:3000', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'Accept-Language': 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2', 'Accept-Encoding': 'gzip, deflate', 'Referer': 'http://localhost:3000/todo', 'Content-Type': 'application/x-www-form-urlencoded', 'Content-Length': '24', 'Connection': 'keep-alive', 'Cookie': 'Pycharm-3c3c9ca5=208607f3-b6b6-4fd8-86be-a71f7a1ed9dc; user=kp9w6eyt4tw3wkw0', 'Upgrade-Insecure-Requests': '1'}
+12:34:23 cookies {'Pycharm-3c3c9ca5': '208607f3-b6b6-4fd8-86be-a71f7a1ed9dc', 'user': 'kp9w6eyt4tw3wkw0'}
+12:34:23 path and query /todo/add {}
+12:34:23 load [
+  {
+    "title": "吃饭",
+    "id": 1,
+    "user_id": 1
+  },
+  {
+    "title": "睡觉",
+    "id": 2,
+    "user_id": 1
+  }
+]
+12:34:23 append last object {'title': '拉屎', 'id': 3, 'user_id': 1}
+12:34:23 save db/Todo.txt [
+  {
+    "title": "吃饭",
+    "id": 1,
+    "user_id": 1
+  },
+  {
+    "title": "睡觉",
+    "id": 2,
+    "user_id": 1
+  },
+  {
+    "title": "拉屎",
+    "id": 3,
+    "user_id": 1
+  }
+] [{'title': '吃饭', 'id': 1, 'user_id': 1}, {'title': '睡觉', 'id': 2, 'user_id': 1}, {'title': '拉屎', 'id': 3, 'user_id': 1}]
+12:34:23 going to send
+12:34:23 send successfully
+12:34:23 close successfully
+
+
+12:34:23 原始请求
+ GET /todo HTTP/1.1
+Host: localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Referer: http://localhost:3000/todo
+Connection: keep-alive
+Cookie: Pycharm-3c3c9ca5=208607f3-b6b6-4fd8-86be-a71f7a1ed9dc; user=kp9w6eyt4tw3wkw0
+Upgrade-Insecure-Requests: 1
+
+
+12:34:23 headers {'Host': 'localhost:3000', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'Accept-Language': 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2', 'Accept-Encoding': 'gzip, deflate', 'Referer': 'http://localhost:3000/todo', 'Connection': 'keep-alive', 'Cookie': 'Pycharm-3c3c9ca5=208607f3-b6b6-4fd8-86be-a71f7a1ed9dc; user=kp9w6eyt4tw3wkw0', 'Upgrade-Insecure-Requests': '1'}
+12:34:23 cookies {'Pycharm-3c3c9ca5': '208607f3-b6b6-4fd8-86be-a71f7a1ed9dc', 'user': 'kp9w6eyt4tw3wkw0'}
+12:34:23 path and query /todo {}
+12:34:23 load [
+  {
+    "title": "吃饭",
+    "id": 1,
+    "user_id": 1
+  },
+  {
+    "title": "睡觉",
+    "id": 2,
+    "user_id": 1
+  },
+  {
+    "title": "拉屎",
+    "id": 3,
+    "user_id": 1
+  }
+]
+12:34:23 going to send
+12:34:23 send successfully
+12:34:23 close successfully
+
+

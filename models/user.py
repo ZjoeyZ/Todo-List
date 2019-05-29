@@ -1,6 +1,6 @@
 from models import Model
-
-
+import hashlib
+from utils import salted_password
 # 定义一个 Uer class 用于保存 用户信息
 class User(Model):
     def __init__(self, form):
@@ -15,6 +15,7 @@ class User(Model):
         # 得到所有对象
         users = User.all()
         # 遍历每个对象，看他的name和password是否和self的name password相等
+        self.password = salted_password(self.password)
         for u in users:
             if self.username == u.username and self.password == u.password:
                 return True

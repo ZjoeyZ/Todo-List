@@ -1,6 +1,7 @@
-from utils import log, template
+from utils import log, template, salted_password
 from models.user import User
 import random
+
 
 
 
@@ -53,6 +54,7 @@ def route_register(request):
         # 经过 request.form() 函数之后会变成一个字典
         form = request.form()
         u = User.new(form)
+        u.password = salted_password(u.password)
         if u.validate_register():
             u.save()
             result = '注册成功<br><a href="/login">请登录</a>'

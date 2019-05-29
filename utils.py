@@ -1,7 +1,7 @@
 from jinja2 import Environment, FileSystemLoader
 import os.path
 import time
-
+import hashlib
 
 def log(*args, **kwargs):
     # time.time() 返回 unix time
@@ -60,3 +60,9 @@ def http_response(body, headers=None):
                             for k, v in headers.items()])
     r = header + '\r\n' + body
     return r.encode(encoding='utf-8')
+
+def salted_password(password, salt='#@123@#'):
+    pwd = hashlib.sha1(password.encode('ascii')).hexdigest()
+    pwd = pwd + salt
+    pwd = hashlib.sha1(pwd.encode('ascii')).hexdigest()
+    return pwd

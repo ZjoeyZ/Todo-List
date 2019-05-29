@@ -1,12 +1,12 @@
 [
   {
     "username": "zhu",
-    "password": "123",
+    "password": "40bd001563085fc35165329ea1ff5c5ecbdbbeef",
     "id": 1
   },
   {
-    "username": "zhang",
-    "password": "123",
+    "username": "zhu",
+    "password": "944faceccdf14445bf7ac79c3021cf55af3abd36",
     "id": 2
   }
 ]
