@@ -1,12 +1,14 @@
-# A Todo_List on web  
+# A Todo_List on web 
+一个不断迭代中的web应用，使用我的[simple-client-and-server](https://github.com/ZjoeyZ/simple-client-and-sever)仓库中的sever4框架  
+  
+# 目前功能：
+    - 用户注册和登录  
+    - 每个用户可使用自己的Todo-List 应用，能够让每个用户增删改查  
+    - 使用jinjia模板、密文存储用户密码
 
-1，使用我的[simple-client-and-server](https://github.com/ZjoeyZ/simple-client-and-sever)仓库中的sever4框架，结合sever5中的内容实现用户登录  
-2，再实现一个简单的Todo-List 应用，能够让用户增删改查  
-3，将这个应用和用户结合，让每个用户拥有自己的Todo-List
-
-# 在sever框架基础上实现用户注册、登录和验证
-1，补充request对象，让解析是能得到请求里的headers字段，和cookie  
-2, 实现用户登录功能，
+# 实现用户注册、登录和验证
+1，完善request对象，让解析是能得到请求里的headers字段，和cookies  
+2，实现用户登录功能，
    - M:User对象的实现 
    - V:register.html login.html的实现
    - C:route_index route_register函数的实现
@@ -23,8 +25,7 @@
                 返回set-cookie字段
                 返回登录成功页面
                 
-# 在sever框架基础上实现Todo_list应用         
-1, 实现todo_list功能，
+# 实现Todo_list应用         
    - M:Todo对象的实现 
         1. title属性存储信息
         2. id属性唯一表示符,初始值能get就get，get不到就保存为-1
