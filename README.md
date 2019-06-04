@@ -1,12 +1,12 @@
 # A Todo_List on web 
 一个不断迭代中的web应用，使用我的[simple-client-and-server](https://github.com/ZjoeyZ/simple-client-and-sever)仓库中的sever4框架  
+目前功能：
   
-# 目前功能：
     - 用户注册和登录  
     - 每个用户可使用自己的Todo-List 应用，能够让每个用户增删改查  
     - 使用jinjia模板、密文存储用户密码
 
-# 实现用户注册、登录和验证
+# 1、用户注册、登录和验证
 1，完善request对象，让解析是能得到请求里的headers字段，和cookies  
 2，实现用户登录功能，
    - M:User对象的实现 
@@ -25,12 +25,12 @@
                 返回set-cookie字段
                 返回登录成功页面
                 
-# 实现Todo_list应用         
+# 2、Todo_list应用         
    - M:Todo对象的实现 
-        1. title属性存储信息
-        2. id属性唯一表示符,初始值能get就get，get不到就保存为-1
-           最开始是直接赋值为-1后来出现bug：load出来的对象实例化也都直接赋值为1了
-           需要在保存时，给Todo实列赋值一个唯一id
+        - title属性存储信息
+        - id属性唯一表示符,初始值能get就get，get不到就保存为-1
+          最开始是直接赋值为-1后来出现bug：load出来的对象实例化也都直接赋值为1了
+          需要在保存时，给Todo实列赋值一个唯一id
         
    - V:todo.html todo_update.html的实现
        - todo.html：
@@ -62,7 +62,7 @@
             1. 根据POST请求，删除指定todo，并保存
                返回一个重定位到/todo的response
         
-# 让每个用户只能对自己的todo-list进行操作 
+# 3、每个用户只能对自己的todo-list进行操作 
    - 给User对象增加id属性，user注册时会分配id，用户登录时分配的session_id和id对应
    - Todo对象的增加user_id属性，
    - 所以要让用户先登录，在使用todo_list，没登录返回重定位
@@ -77,13 +77,17 @@
                    但还是没有，说明cookie没有及时更新
                    后来发现cookie更新的函数果然在发送response之后
                    
-# 将模板更新成jinjia实现  
+# 5、将模板更新成jinjia实现  
    - 将模板用jinjia语法写
    - 用更新各个返回模板的函数
    
-# 使用密文存储用户密码
+# 6、使用密文存储用户密码
    - 修改user的注册路由函数，在注册时将密码转成密文
    - 修改user的exist函数，检验时也要将明文密码转密文密码
    - 密文加盐在加密做为密码存储
    
-# 使用数据库存储数据
+# 7、使用数据库存储数据
+   - 之前的增删查改每次都是load和save所有的数据
+   - 现在为每个对象的增删查改创建函数，对sqlite数据库进行操作
+   - 第一步：覆盖了User的父类save方法，用sql insert的方式重写
+   - 第二部：重写加载user的方法...

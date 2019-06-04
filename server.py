@@ -9,7 +9,7 @@ from routes_todo import route_todo_dict
 
 
 
-# 定义一个 class 用于保存请求的数据
+# 定义一个 类用于保存请求的数据
 class Request(object):
     def __init__(self):
         self.method = 'GET'

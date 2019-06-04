@@ -1,4 +1,5 @@
 import json
+import sqlite3
 from utils import log
 
 
@@ -16,6 +17,7 @@ def save(data, path):
     with open(path, 'w+', encoding='utf-8') as f:
         log('save', path, s, data)
         f.write(s)
+    # with sqlite3.connect(path) as f:
 
 
 def load(path):
@@ -43,10 +45,20 @@ class Model(object):
         return path
 
     @classmethod
+    def sql_path(cls):
+        # classmethod 有一个参数是 class
+        # 所以我们可以得到 class 的名字
+        classname = cls.__name__
+        path = 'db/{}.sqlite'.format(classname)
+        return path
+
+
+    @classmethod
     def new(cls, form):
         # 下面一句相当于 User(form) 或者 Msg(form)
         m = cls(form)
         return m
+
 
     @classmethod
     def all(cls):

@@ -1,5 +1,6 @@
 from models import Model
 import hashlib
+import sqlite3
 from utils import salted_password
 # 定义一个 Uer class 用于保存 用户信息
 class User(Model):
@@ -28,3 +29,23 @@ class User(Model):
         2，不能让用户名重复
         """
         return len(self.username) > 2 and len(self.password) > 2
+
+
+    def save(self):
+        """
+        sql_save 函数用于把一个 User的实例保存到sqlite中
+        """
+        #不用管user_id，在数据库里自增
+
+        path = self.sql_path()
+        conn = sqlite3.connect(path)
+        sql_insert = '''
+        INSERT INTO
+            user(username,password)
+        VALUES
+            (?, ?);
+        '''
+        conn.execute(sql_insert, (self.username, self.password))
+        print('插入数据成功')
+        conn.commit()
+        conn.close()
