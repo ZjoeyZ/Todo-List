@@ -14,11 +14,14 @@ class User(Model):
         判断对象是否存在
         """
         # 得到所有对象
-        users = User.all()
-        # 遍历每个对象，看他的name和password是否和self的name password相等
         self.password = salted_password(self.password)
+        users = self.select()
+        print("users", users)
+        print("user", self.username, type(self.username), self.password)
+        # 遍历每个对象，看他的name和password是否和self的name password相等
         for u in users:
-            if self.username == u.username and self.password == u.password:
+            if self.username == u[1] and self.password == u[2]:
+                self.id = u[0]
                 return True
         return False
 
@@ -49,3 +52,24 @@ class User(Model):
         print('插入数据成功')
         conn.commit()
         conn.close()
+
+    def select(self):
+        path = self.sql_path()
+        conn = sqlite3.connect(path)
+        sql = '''
+        SELECT
+           id, username, password
+        FROM
+            User
+        WHERE
+            username=? and password=?
+        '''
+        # 这是读取数据的套路
+        cursor = conn.execute(sql, (self.username, self.password))
+        users = list(cursor)
+        conn.commit()
+        conn.close()
+        return users
+
+
+

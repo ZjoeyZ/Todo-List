@@ -3,15 +3,24 @@ import os.path
 import time
 import hashlib
 
+# def log(*args, **kwargs):
+#     #log到日志里
+#     # time.time() 返回 unix time
+#     # unix time 转换为普通人类可以看懂的格式
+#     format = '%H:%M:%S'
+#     value = time.localtime(int(time.time()))
+#     dt = time.strftime(format, value)
+#     with open('log.txt', 'a', encoding='utf-8') as f:
+#         print(dt, *args, file=f, **kwargs)
+
+
 def log(*args, **kwargs):
     # time.time() 返回 unix time
     # unix time 转换为普通人类可以看懂的格式
     format = '%H:%M:%S'
     value = time.localtime(int(time.time()))
     dt = time.strftime(format, value)
-    with open('log.txt', 'a', encoding='utf-8') as f:
-        print(dt, *args, file=f, **kwargs)
-
+    print(dt, *args, **kwargs)
 
 # __file__ 本文件的名字
 # 得到用于加载模板的目录

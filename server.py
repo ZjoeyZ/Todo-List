@@ -20,6 +20,9 @@ class Request(object):
         self.cookies = {}
 
     def form(self):
+        """
+        返回字典，""： ""
+        """
         args = self.body.split('&')
         f = {}
         for arg in args:

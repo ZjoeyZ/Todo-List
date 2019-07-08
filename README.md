@@ -89,5 +89,27 @@
 # 7、使用数据库存储数据
    - 之前的增删查改每次都是load和save所有的数据
    - 现在为每个对象的增删查改创建函数，对sqlite数据库进行操作
-   - 第一步：覆盖了User的父类save方法，用sql insert的方式重写
-   - 第二部：重写加载user的方法...
+   - 第一步：
+            更新用户注册
+            覆盖了User的父类save方法，用sql insert的方式重写
+            todo：应该让用户名具有唯一性
+   - 第二步：
+            更新用户登录
+                找到原来用户登录的route-修改的exist()-修改user.all()
+                之前都是通过在所有对象里遍历查找，现在可以用sql语句直接查找
+                问题：
+                    username数据库格式是interger，已修改
+                    routes里验证问user存在只有不需要重新find user，直接用它就行
+            更新todo
+                1, 创建todo表
+                2, 修改todo.all
+                    修改todo.all 利用sql select * 结合u_id得到todo
+                    修改jinjia，因为传入的不是todo对象，而是todo tuple
+                3, 修改
+                    增：重写了todo.save
+                    删：根据id, user_id创建对象
+                        p判断对象是否存在与数据库
+                        有则删除
+                        重定位
+                    改
+                    查

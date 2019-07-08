@@ -29,7 +29,6 @@ def route_login(request):
         form = request.form()
         u = User.new(form)
         if u.exist():
-            u = u.find_by(username=u.username)
             #  生成session，与用户名称建立联系
             session_id = random_str()
             session[session_id] = u.id
